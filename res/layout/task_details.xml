@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="2" >
+
+    <TextView
+        android:id="@+id/taskDetailsSiteLabel"
+        style="@style/TextBoxLabel"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="@string/label_site" />
+
+    <TextView
+        android:id="@+id/taskDetailsSite"
+        android:layout_column="1"
+        android:layout_marginTop="4dp"
+        android:text="test"
+        android:layout_row="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/taskDetailsHiveIdLabel"
+        style="@style/TextBoxLabel"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="@string/label_hive_id" />
+
+    <TextView
+        android:id="@+id/taskDetailsHiveId"
+        android:layout_column="1"
+        android:layout_marginTop="4dp"
+        android:text="0000"
+        android:layout_row="1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/taskDetailsNameLabel"
+        style="@style/TextBoxLabel"
+        android:layout_width="150dp"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="2"
+        android:text="@string/label_description" />
+
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="fill_parent"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_margin="4dp"
+        android:layout_row="3"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="4dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/checkBoxTaskDone"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="4"
+        android:text="@string/label_task_done"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+</GridLayout>

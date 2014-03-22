@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- SITE -->
+
+        <TextView
+            android:id="@+id/textViewSiteLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_site" />
+
+        <TextView
+            android:id="@+id/textViewSiteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/textViewSiteLabel"
+            android:lines="1"
+            android:maxWidth="220dp"
+            android:text="test"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/buttonSelectLocation"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/textViewSiteName"
+            android:contentDescription="@string/set_location_description"
+            android:onClick="onButtonSetLocationClick"
+            android:src="@drawable/nav_right_sml"
+            android:text="" />
+
+        <!-- QR CODE -->
+
+        <TextView
+            android:id="@+id/textViewHiveIdLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewQrCode"
+            android:layout_below="@+id/buttonSelectLocation"
+            android:text="@string/label_hive_id" />
+
+        <TextView
+            android:id="@+id/textViewQrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSelectLocation"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/textViewHiveIdLabel"
+            android:text="test"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- MAF ID -->
+
+        <TextView
+            android:id="@+id/textViewMafIdLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSelectLocation"
+            android:layout_toRightOf="@+id/textViewQrCode"
+            android:text="@string/label_mafid" />
+
+        <TextView
+            android:id="@+id/textViewMafId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSelectLocation"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/textViewMafIdLabel"
+            android:text="test"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- QUEEN -->
+
+        <TextView
+            android:id="@+id/textViewQueenLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textEditQueenType"
+            android:layout_below="@+id/textViewMafId"
+            android:text="@string/label_queen" />
+
+        <EditText
+            android:id="@+id/textEditQueenType"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewMafId"
+            android:layout_margin="4dp"
+            android:imeOptions="actionDone"
+            android:inputType="textCapCharacters"
+            android:text="test" />
+
+        <!-- BEE -->
+
+        <TextView
+            android:id="@+id/textViewBeeLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerHiveBee"
+            android:layout_below="@+id/textEditQueenType"
+            android:text="@string/label_bee" />
+
+        <Spinner
+            android:id="@+id/spinnerHiveBee"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textEditQueenType"
+            android:layout_margin="4dp" />
+
+        <!-- BROOD -->
+
+        <TextView
+            android:id="@+id/textViewBroodLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerHiveBrood"
+            android:layout_below="@+id/spinnerHiveBee"
+            android:text="@string/label_brood" />
+
+        <Spinner
+            android:id="@+id/spinnerHiveBrood"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinnerHiveBee"
+            android:layout_margin="4dp" />
+
+        <!-- HEALTH -->
+
+        <TextView
+            android:id="@+id/textViewHealthLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerHiveHealth"
+            android:layout_below="@+id/spinnerHiveBrood"
+            android:text="@string/label_health" />
+
+        <Spinner
+            android:id="@+id/spinnerHiveHealth"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinnerHiveBrood"
+            android:layout_margin="4dp" />
+
+        <!-- FOOD -->
+
+        <TextView
+            android:id="@+id/textViewFoodLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerHiveFood"
+            android:layout_below="@+id/spinnerHiveHealth"
+            android:text="@string/label_food" />
+
+        <Spinner
+            android:id="@+id/spinnerHiveFood"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinnerHiveHealth"
+            android:layout_margin="4dp" />
+
+        <!-- VARROA -->
+
+        <TextView
+            android:id="@+id/textViewVarroaLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerHiveVarroa"
+            android:layout_below="@+id/spinnerHiveFood"
+            android:text="@string/label_varroa" />
+
+        <Spinner
+            android:id="@+id/spinnerHiveVarroa"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinnerHiveFood"
+            android:layout_margin="4dp" />
+
+        <!-- SPLIT -->
+
+        <TextView
+            android:id="@+id/textViewSplitLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextHiveSplit"
+            android:layout_below="@+id/spinnerHiveVarroa"
+            android:text="@string/label_split" />
+
+        <EditText
+            android:id="@+id/editTextHiveSplit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinnerHiveVarroa"
+            android:layout_margin="4dp"
+            android:imeOptions="actionDone"
+            android:inputType="textCapCharacters"
+            android:text="test" />
+
+        <!-- VIRUS -->
+
+        <TextView
+            android:id="@+id/textViewVirusLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerHiveVirus"
+            android:layout_below="@+id/editTextHiveSplit"
+            android:text="@string/label_virus" />
+
+        <Spinner
+            android:id="@+id/spinnerHiveVirus"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTextHiveSplit"
+            android:layout_margin="4dp" />
+
+        <!-- POLLEN -->
+
+        <TextView
+            android:id="@+id/textViewPollenLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinnerHivePollen"
+            android:layout_below="@+id/spinnerHiveVirus"
+            android:text="@string/label_pollen" />
+
+        <Spinner
+            android:id="@+id/spinnerHivePollen"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinnerHiveVirus"
+            android:layout_margin="4dp" />
+
+        <!-- GOOD PRODUCER -->
+
+        <TextView
+            android:id="@+id/textViewGoodProducer"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBoxIsGoodProducer"
+            android:layout_below="@+id/spinnerHivePollen"
+            android:text="@string/label_good_producer" />
+
+        <CheckBox
+            android:id="@+id/checkBoxIsGoodProducer"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spinnerHivePollen"
+            android:text="" />
+
+        <!-- VARROA SAMPLE -->
+
+        <TextView
+            android:id="@+id/textViewVarroaSample"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextVarroaCount"
+            android:layout_below="@+id/checkBoxIsGoodProducer"
+            android:text="@string/label_varroa_sample" />
+
+        <CheckBox
+            android:id="@+id/checkBoxIsVarroaSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextVarroaCount"
+            android:layout_below="@+id/checkBoxIsGoodProducer"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/textViewVarroaSample"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/editTextVarroaCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextVarroaCount"
+            android:layout_below="@+id/checkBoxIsGoodProducer"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/checkBoxIsVarroaSample"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="3"
+            android:text="000" />
+
+        <TextView
+            android:id="@+id/textViewVarroaSample300"
+            style="@style/TextBoxLabel"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextVarroaCount"
+            android:layout_below="@+id/checkBoxIsGoodProducer"
+            android:layout_toRightOf="@+id/editTextVarroaCount"
+            android:text="/ 300" />
+
+        <!-- TASKS -->
+
+        <TextView
+            android:id="@+id/textViewTasksLabel"
+            style="@style/TextBoxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextVarroaCount"
+            android:text="@string/label_tasks" />
+
+        <ImageButton
+            android:id="@+id/buttonHiveTasks"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/editTextVarroaCount"
+            android:layout_toRightOf="@+id/textViewTasksLabel"
+            android:contentDescription="@string/label_manage_tasks"
+            android:onClick="onBtnHiveTasksClicked"
+            android:src="@drawable/nav_right_sml"
+            android:text="" />
+
+        <!-- SPACE -->
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/textViewTasksLabel"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</ScrollView>

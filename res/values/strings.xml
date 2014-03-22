@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hive Tracker</string>
+    <string name="welcome_message">Welcome to Hive Tracker</string>
+    <string name="login_to_box">Login</string>
+    <string name="category_list_name">Runs</string>
+    <string name="menu_new_button">New</string>
+    <string name="category_details_name">Run Details</string>
+    <string name="location_list_name">Sites</string>
+    <string name="location_details_name">Site Details</string>
+    <string name="move_hives_name">Move Hives</string>
+    <string name="home_category_button">Browse Runs</string>
+    <string name="update_location_button">Update Location</string>
+    <string name="latitude_label">Latitude:</string>
+    <string name="longitude_label">Longitude:</string>
+    <string name="treatment_prompt">choose treatment</string>
+    <string name="hive_details_name">Hive Details</string>
+    <string name="log_list_name">Log</string>
+    <string name="log_details_name">Log Details</string>
+    <string name="task_list_name">Tasks</string>
+    <string name="task_details_name">Task Details</string>
+    <string name="runs_label">Runs</string>
+    <string name="sync_label">Sync</string>
+    <string name="scan_label">Scan</string>
+    <string name="settings_label">Settings</string>
+    <string name="work_log_label">Log</string>
+    <string name="move_label">Move</string>
+    <string name="label_name">Name:</string>
+    <string name="label_mafid">MAF#:</string>
+    <string name="label_site">Site:</string>
+    <string name="label_qr_code">QR Code:</string>
+    <string name="box_login_label">Box Login</string>
+    <string name="hive_list_name">Hives</string>
+    <string name="label_hive_id">Hive#:</string>
+    <string name="label_queen">Queen:</string>
+    <string name="label_bee">Bees:</string>
+    <string name="label_brood">Brood:</string>
+    <string name="label_health">Health:</string>
+    <string name="label_food">Food:</string>
+    <string name="label_varroa">Varroa:</string>
+    <string name="label_virus">Virus:</string>
+    <string name="label_pollen">Pollen:</string>
+    <string name="label_split">Split:</string>
+    <string name="label_pick_date_button">Pick Date</string>
+    <string name="set_location_description">Set Location</string>
+    <string name="label_description">Description:</string>
+    <string name="label_date">Date:</string>
+    <string name="label_tasks">Tasks:</string>
+    <string name="button_label_tasks">Tasks</string>
+    <string name="label_manage_tasks">Manage</string>
+    <string name="label_task_done">Done</string>
+    <string name="label_select_new_site">Select new site:</string>
+    <string name="label_scanned_hives_list">Scanned hives:</string>
+    <string name="label_enter_name">Enter your name:</string>
+    <string name="label_logged_in_as">Logged in as:</string>
+    <string name="label_varroa_sample">Varroa sample:</string>
+    <string name="sync_name">Sync</string>
+    <string name="select_action_name">Bulk Action</string>
+     <string name="harvest_info_name">Harvest Info</string>
+
+    <style name="TextBoxLabel" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="TextBoxLabelNormal" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+    <string name="cancel_sync">Close</string>
+    <string name="force_sync">Upload All</string>
+    <string name="label_good_producer">Good Producer:</string>
+    
+</resources>

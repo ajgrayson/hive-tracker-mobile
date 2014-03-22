@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/checkBoxHarvest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Harvest" />
+
+    <!-- <Button
+        android:id="@+id/buttonEnterHarvestInfo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxHarvest"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:onClick="buttonEnterHarvestInfoOnClick"
+        android:text="Enter Info" /> -->
+
+    <CheckBox
+        android:id="@+id/checkBoxTreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxHarvest"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Apply Treatment" />
+
+    <!-- <Spinner
+        android:id="@+id/spinnerTreatmentType"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxTreat"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" /> -->
+
+    <CheckBox
+        android:id="@+id/checkBoxRemoveTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxTreat"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Remove Treatment" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxRemoveTreatment"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Feed" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWinterDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxFeed"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Winter Down" />
+
+</RelativeLayout>

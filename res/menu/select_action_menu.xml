@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/done_selecting_action" android:visible="true" android:title="Done" android:showAsAction="always"></item>
+    
+
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="2" >
+
+    <TextView
+        android:id="@+id/locationDetailsNameLabel"
+        style="@style/TextBoxLabel"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="@string/label_name" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:maxLength="25" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/locationDetailsMafIdLabel"
+        style="@style/TextBoxLabel"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="@string/label_mafid" />
+
+    <EditText
+        android:id="@+id/editTextMafId"
+        android:layout_width="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/locationDetailsLatitudeLabel"
+        style="@style/TextBoxLabel"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="@string/latitude_label" />
+
+    <EditText
+        android:id="@+id/editTextLatitude"
+        android:layout_width="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/locationDetailsLongitudeLabel"
+        style="@style/TextBoxLabel"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:layout_row="3"
+        android:text="@string/longitude_label" />
+
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="3"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/updateLocationButton"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="4"
+        android:onClick="onUpdateLocationButtonClick"
+        android:text="@string/update_location_button" />
+
+</GridLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ProgressBar
+        android:id="@+id/progressBarSync"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/textViewSyncTimeRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarSync"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/textViewSyncWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSyncTimeRemaining"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:text="Warning: the app may freeze during sync. This is normal behaviour, please don't close it." />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="335dp"
+        android:layout_alignTop="@+id/textViewSyncStatus"
+        android:layout_below="@+id/textViewSyncWarning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/textViewSyncStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonCancelSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:onClick="onButtonCancelSyncClicked"
+        android:text="@string/cancel_sync" />
+
+    <Button
+        android:id="@+id/buttonForceSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/scrollView1"
+        android:onClick="onButtonForceSyncClicked"
+        android:text="@string/force_sync" />
+
+</RelativeLayout>

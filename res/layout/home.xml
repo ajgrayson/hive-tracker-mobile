@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- <TextView
+        android:id="@+id/labelLoggedInAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/textLoggedInAs"
+        android:layout_alignBaseline="@+id/textLoggedInAs"
+        android:gravity="center"
+        android:text="@string/label_logged_in_as" >
+    </TextView>
+    <TextView
+        android:id="@+id/textLoggedInAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:text="" >
+    </TextView> -->
+    
+    <ImageButton
+        android:id="@+id/buttonScan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="25dip"
+        android:onClick="onBtnScanClicked"
+        android:src="@drawable/scan_button" />
+
+    <TextView
+        android:id="@+id/buttonScanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonScan"
+        android:layout_alignRight="@+id/buttonScan"
+        android:layout_below="@+id/buttonScan"
+        android:gravity="center"
+        android:text="@string/scan_label" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/buttonBrowseRuns"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="35dip"
+        android:layout_marginTop="25dip"
+        android:onClick="onBtnCategoryClicked"
+        android:src="@drawable/run_button" />
+
+    <TextView
+        android:id="@+id/buttonRunLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonBrowseRuns"
+        android:layout_alignRight="@+id/buttonBrowseRuns"
+        android:layout_below="@+id/buttonBrowseRuns"
+        android:gravity="center"
+        android:text="@string/runs_label" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/buttonWorkLog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonScanLabel"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="16dip"
+        android:onClick="onBtnWorkLogClicked"
+        android:src="@drawable/log_button" />
+
+    <TextView
+        android:id="@+id/buttonWorkLogLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonWorkLog"
+        android:layout_alignRight="@+id/buttonWorkLog"
+        android:layout_below="@+id/buttonWorkLog"
+        android:gravity="center"
+        android:text="@string/work_log_label" >
+    </TextView>
+    
+     <ImageButton
+        android:id="@+id/buttonMove"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonRunLabel"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="35dip"
+        android:layout_marginTop="16dip"
+        android:onClick="onBtnMoveClicked"
+        android:src="@drawable/move_button" />
+
+    <TextView
+        android:id="@+id/buttonMoveLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonMove"
+        android:layout_alignRight="@+id/buttonMove"
+        android:layout_below="@+id/buttonMove"
+        android:gravity="center"
+        android:text="@string/move_label" >
+    </TextView>
+    
+    <ImageButton
+        android:id="@+id/buttonAllTasks"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonWorkLogLabel"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="16dip"
+        android:onClick="onBtnAllTasksClicked"
+        android:src="@drawable/tasks_button" />
+
+    <TextView
+        android:id="@+id/buttonAllTasksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAllTasks"
+        android:layout_alignRight="@+id/buttonAllTasks"
+        android:layout_below="@+id/buttonAllTasks"
+        android:gravity="center"
+        android:text="@string/button_label_tasks" >
+    </TextView>
+
+     <ImageButton
+        android:id="@+id/buttonSync"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonMoveLabel"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="35dip"
+        android:layout_marginTop="16dip"
+        android:onClick="onBtnSyncClicked"
+        android:src="@drawable/sync_button" />
+
+    <TextView
+        android:id="@+id/buttonSyncLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSync"
+        android:layout_alignRight="@+id/buttonSync"
+        android:layout_below="@+id/buttonSync"
+        android:gravity="center"
+        android:text="@string/sync_label" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:text="" />
+  
+</RelativeLayout>
